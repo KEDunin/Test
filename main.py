@@ -1,5 +1,9 @@
-print("Hello, world!")
-a=2
-b=5
-print(a*b)
-print("Попытка отправить изменения на сервер")
+# file = open("TEST1.py", "r")
+# print(file.read())
+# file.close()
+
+with open("TEST1.py", 'r') as file:
+    for line in file:
+        print(line.strip())
+
+with open("")
