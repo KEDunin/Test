@@ -1,9 +1,13 @@
-# file = open("TEST1.py", "r")
-# print(file.read())
-# file.close()
+import datetime
+import os
+from pathlib import Path
+t_dir=os.getcwd()
+print(t_dir)
+p_dir=Path(t_dir) / "Files"
+print(Path(t_dir).exists())
 
-with open("TEST1.py", 'r') as file:
-    for line in file:
-        print(line.strip())
-
-with open("")
+print(datetime.datetime(2022, 1, 1))
+t_dir = os.getcwd()
+with open("Project.py", "w")as file:
+    file.write("123")
+a = os.path.join(t_dir, "Project.py")
