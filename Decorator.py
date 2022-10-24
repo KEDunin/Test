@@ -1,10 +1,10 @@
 def work_with_console(func):
     def wrapper(*args, **kwargs):
-        first = input("Введите число а:")
-        second = input("Введите число b:")
-        first, second = args
-        answer = calculation(first, second)
-        print(answer)
+        a = float(input("Введите переменную a: "))
+        b = float(input("Введите переменную b: "))
+        result = func(a, b).__round__(3)
+        print(f"Результат {result}")
+        print("")
         return func(*args, **kwargs)
     return wrapper
 
@@ -12,3 +12,7 @@ def work_with_console(func):
 @work_with_console
 def calculation(a, b):
     return (a + b) / b * a
+
+
+while True:
+    calculation()
